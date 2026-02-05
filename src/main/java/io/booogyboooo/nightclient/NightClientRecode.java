@@ -83,8 +83,8 @@ public class NightClientRecode implements ModInitializer {
 		bindHandler.init();
 		
 		//Testing
-		String path = MinecraftClient.getInstance().runDirectory.getPath() + "/NightClient/test.ns";
-		scriptEngine.load(new File(path));
+		// String path = MinecraftClient.getInstance().runDirectory.getPath() + "/NightClient/test.ns";
+		// scriptEngine.load(new File(path));
 		
 		//Combat
 		ModuleList.register(new AimAssist());
