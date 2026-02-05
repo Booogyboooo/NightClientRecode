@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "nightclient-recode",
+	"version": "${version}",
+	"name": "NightClient Recode",
+	"description": "NightClientRecode (Vannila Utility Client)",
+	"authors": [
+		"Booogyboooo",
+		"NotProlific"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/nightclient-recode/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.booogyboooo.nightclient.NightClientRecode"
+		]
+	},
+	"mixins": [
+		"nightclient-recode.mixins.json"
+	],
+	"accessWidener": "nightclient.accesswidener",
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.7",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

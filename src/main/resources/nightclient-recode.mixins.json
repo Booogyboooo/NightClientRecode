@@ -1,0 +1,21 @@
+{
+	"required": true,
+	"package": "io.booogyboooo.nightclient.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ChatScreenMixin",
+		"ClientConnectionMixin",
+		"ClientPlayerEntityMixin",
+		"GenericContainerScreenMixin",
+		"InGameHudMixin",
+		"InGameOverlayRendererMixin",
+		"MinecraftClientMixin",
+		"PlayerListEntryMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
