@@ -37,6 +37,7 @@ import io.booogyboooo.nightclient.modules.exploit.Blink;
 import io.booogyboooo.nightclient.modules.exploit.BookDupe;
 import io.booogyboooo.nightclient.modules.exploit.GodMode;
 import io.booogyboooo.nightclient.modules.exploit.Lag;
+import io.booogyboooo.nightclient.modules.misc.AutoTool;
 import io.booogyboooo.nightclient.modules.misc.BedBreaker;
 import io.booogyboooo.nightclient.modules.misc.BoxEscape;
 import io.booogyboooo.nightclient.modules.misc.FastBreak;
@@ -82,7 +83,7 @@ public class NightClientRecode implements ModInitializer {
 		commandManager.init();
 		bindHandler.init();
 		
-		//Testing
+		// Testing
 		// String path = MinecraftClient.getInstance().runDirectory.getPath() + "/NightClient/test.ns";
 		// scriptEngine.load(new File(path));
 		
@@ -103,6 +104,7 @@ public class NightClientRecode implements ModInitializer {
 		ModuleList.register(new Lag());
 		
 		//Misc
+		ModuleList.register(new AutoTool());
 		ModuleList.register(new BedBreaker());
 		ModuleList.register(new BoxEscape());
 		ModuleList.register(new FastBreak());
